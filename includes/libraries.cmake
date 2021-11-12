@@ -520,17 +520,6 @@ macro(nRF5_addLibuarteAsync)
             )
 endmacro()
 
-# adds timer driver
-macro(nRF5_addTimer)
-    list(APPEND INCLUDE_DIRS
-            "${SDK_ROOT}/modules/nrfx/drivers/include"
-            )
-
-    list(APPEND SOURCE_FILES
-            "${SDK_ROOT}/modules/nrfx/drivers/src/nrfx_timer.c"
-            )
-endmacro()
-
 # adds nvmc HAL
 macro(nRF5_addNVMC)
     list(APPEND INCLUDE_DIRS
